@@ -7,4 +7,4 @@ Projede kullanılan şablonlar
 Web Template  : https://elements.envato.com/banu-nft-marketplace-template-MNSNTKA
 Admin Template: https://elements.envato.com/alpha-material-design-admin-template-56H8927
 
-Kullanılan görsellerin hepsi Pinerest üüzerinden alınmıştır. Bize ait değildir.                              
+Kullanılan görsellerin hepsi Pinterest üzerinden alınmıştır. Bize ait değildir.                              
