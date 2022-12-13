@@ -1,0 +1,16 @@
+.section-title {
+    margin-bottom: 60px;
+    @include xs-device {
+        margin-bottom: 50px;
+    }
+    .subtitle {
+        color: #ff512f;
+        font-weight: 500;
+        font-size: 20px;
+        text-decoration: underline;
+        letter-spacing: 0.2em;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-family: $font-2;
+    }
+}

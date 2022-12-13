@@ -1,0 +1,23 @@
+.card-block-style-one {
+    background: $bg-color-1;
+    padding: 40px;
+    border-radius: 10px;
+    @include xs-device {
+        padding: 25px;
+    }
+    .title {
+        text-transform: capitalize;
+        font-weight: 600;
+        @include xs-device {
+            font-size: 20px;
+        }
+    }
+    p {
+        font-size: 17px;
+        margin-bottom: 0;
+        line-height: 30px;
+        @include xs-device {
+            font-size: 16px;
+        }
+    }
+}

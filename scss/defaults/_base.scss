@@ -1,0 +1,179 @@
+/* -- Base css
+-------------------------------------------- -- */
+a,
+img,
+i {
+  transition: 0.3s;
+}
+a {
+  text-decoration: none;
+  color: $body-color;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-primary;
+  }
+}
+h4 a:hover,
+a.text-white:hover {
+  color: $color-primary !important;
+}
+hr {
+  border-top: 1px solid #515151;
+}
+.btn,
+button {
+  transition: 0.5s;
+}
+ul,
+li {
+  list-style: none;
+  padding-left: 0;
+}
+
+dl,
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.breadcrumb {
+  margin-bottom: 0;
+  margin-top: 0;
+  li {
+    font-weight: 500;
+  }
+}
+::-moz-selection {
+  background: #323da5;
+  color: #fff;
+  text-shadow: none;
+}
+
+.theme--light.v-btn.v-btn--icon {
+  color: #767695;
+}
+
+::selection {
+  background: #323da5;
+  color: #fff;
+  text-shadow: none;
+}
+
+br {
+  @include xs-device {
+    display: none;
+  }
+}
+
+.dropdown-menu {
+  li {
+    font-size: 14px;
+  }
+}
+
+.dropdown-menu-dark .dropdown-item.active,
+.dropdown-menu-dark .dropdown-item:active {
+  color: #fff;
+  background: $gradient-primary;
+}
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row > * {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body {
+  @include xs-device {
+    overflow-x: hidden;
+  }
+}
+br {
+  @include sm-device {
+    display: none;
+  }
+}
+/* -- Print Media query
+---------------------------------------- -- */
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* -- Print styles- Inlined to avoid the additional HTTP request:
+----------------------------------------------------------------------------- */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    // color: $typo-heading !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* -- Don't show links that are fragment identifiers -- */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    // border: 1px solid $border-color;
+    page-break-inside: avoid;
+  }
+
+  /* -- Printing Tables -- */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

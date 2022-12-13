@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic metas
+  ======================================== -->
+  <meta charset="utf-8" />
+  <title>Duyurular</title>
+  <meta name="robots" content="noindex, follow" />
+  <meta name="description" content="" />
+
+  <!-- Mobile specific metas
+    ======================================== -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Icon fonts
+	======================================== -->
+  <link rel="stylesheet" href="fonts/remixicon.css" />
+
+  <!-- links for favicon
+    ======================================== -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+
+  <!-- CSS
+	======================================== -->
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/vendor/slick.css">
+  <link rel="stylesheet" href="css/vendor/slick-theme.css">
+
+  <!-- Style css -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <style>
+
+
+.duyurular {
+
+  box-sizing:border-box;
+  
+
+}
+.box1 {
+ width:100p;
+ line-height: 125px;
+ text-align: center;
+ margin:10px;
+ 
+
+}
+.show {
+  display: block;
+}
+.hide{
+  display: none;
+}
+ .btn-grad {
+ background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%);
+margin:10px;
+padding:10px;
+text-align: center;
+ cursor:pointer;
+          
+           
+}
+.btn-grad:hover {
+background-position: right center; 
+color: #fff;
+text-decoration: none;
+ } 
+
+ 
+
+ 
+ </style>
+</head>
+
+<body>
+  <!-- Start Preloader -->
+  <div id="preloader">
+    <div id="ctn-preloader" class="ctn-preloader">
+      <div class="animation-preloader">
+        <div class="icon"><img src="./images/logo-preloader.png" alt="logo" class="m-auto d-block"> <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Preloader -->
+
+  <!-- start header area -->
+  <header class="ib-header header-default header-fixed header--sticky fluid-header">
+    <div class="header-inner d-flex align-items-center justify-content-between">
+      <div class="header-left d-flex align-items-center">
+        <div class="logo-wrapper">
+          <a href="index.html" class="logo logo-light"><img src="./images/logo-white.png" alt="brand"> </a>
+          <a href="index.html" class="logo logo-dark"><img src="./images/logo-dark.png" alt="brand"> </a>
+        </div>
+        <!-- End .logo-wrapper -->
+
+        <div class="mainmenu-wrapper">
+          <nav id="sideNav" class="mainmenu-nav d-none d-xl-block">
+            <!-- Start Mainmanu Nav -->
+            <ul class="mainmenu">
+              <li>
+                <a href="index.html" >Anasayfa</a>
+              </li>
+             
+              <li class="has-dropdown has-menu-child-item" >
+                <a href="#">Ürünler</a>
+                <ul class="submenu">
+                  <li>
+                    <a class="active" href="live-auction.html" >Canlı Müzayedeler</a>
+                  </li>
+
+                  <li>
+                    <a href="coin.html">X-CIN Coin</a>
+                  </li>
+                  <li>
+                    <a href="all-nft.html">All NFT</a>
+                  </li>
+                  <li>
+                    <a href="art.html">Domain Adı</a>
+                  </li>
+                  <li>
+                    <a href="art.html">Müzik</a>
+                  </li>
+                  <li>
+                    <a href="popular-collections.html">Koleksiyonlar</a>
+                  </li>
+                  <li>
+                    <a href="art.html">Sanat</a>
+                  </li>
+                  
+                  <li>
+                    <a href="art.html">Trading Kartları</a>
+                  </li>
+                  <li>
+                    <a href="art.html">Video</a>
+                  </li>
+                  <li>
+                    <a href="art.html">Virtual Dünyalar</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-dropdown has-menu-child-item">
+                <a href="#">Birimlerimiz</a>
+                <ul class="submenu">
+                  <li><a href="marketplace.html">Marketplace Uzmanı</a></li>
+                  <li><a href="authors.html">Sanatçılar</a></li>
+                  <li><a href="finance.html">Finans</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown has-menu-child-item">
+                <a href="#">Kaynaklar</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a href="notification.html">Duyurular</a>
+                  </li>
+                  <li>
+                    <a href="sug-comp.html">Öneri/Şikayet</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="aboutus.html" >Hakkımızda</a>
+              </li>
+              <li>
+                <a href="mission-vission.html">Misyon/Vizyon</a>
+              </li>
+              <li>
+                <a href="contact.html">İletişim</a>
+              </li>
+              
+              </li>
+            </ul>
+            <!-- End Mainmanu Nav -->
+          </nav>
+        </div>
+      </div>
+      <!-- End .header-left -->
+
+      <div class="header-right d-flex align-items-center" >
+        <ul class="header-right-inner">
+          <li class=" d-none d-lg-block">
+            <form action="#" class="search-bar">
+              <input type="text" name="search" placeholder="Koleksiyon, öge, kullanıcı" id="search">
+              <button class="search-btn" type="submit"> <i class="ri-search-line"></i></button>
+            </form>
+          </li>
+          
+          <!-- End .search-bar -->
+
+          <li class="setting-option d-block  d-lg-none ">
+            <div class="icon-box search-mobile-icon">
+              <button><i class="ri-search-line"></i></button>
+            </div>
+            <form id="header-search-1" action="#" method="GET" class="large-mobile-blog-search search-bar">
+              <input type="text" name="search" placeholder="Koleksiyon, öge, kullanıcı" id="search_2">
+              <button class="search-btn" type="submit"> <i class="ri-search-line"></i></button>
+            </form>
+          </li>
+          <!-- End .search-mobile-icon -->
+
+          <li class="wallet-button"> <a href="wallet.html" class="btn btn-gradient btn-small">
+              <span><i class="ri-wallet-3-line"></i>Bağlan</span></a></li>
+          <!-- End .wallet-button -->
+
+          <li class="setting-option mobile-menu-bar d-block d-xl-none">
+            <button class="hamberger-button">
+              <i class="ri-menu-2-fill"></i>
+            </button>
+          </li>
+          <!-- End .mobile-menu-bar -->
+          <li class="avatar-info"> <a href="product-details.html"><img src="./images/avatar/avatar.png"
+                alt="user avatar"></a>
+            <ul class="submenu">
+              <li><a href="author-profile.html"><i class="ri-user-line"></i> Profil</a></li>
+              <li><a href="create.html"><i class="ri-edit-line"></i> Öge Oluştur</a></li>
+              <li><a href="authors.html"><i class="ri-layout-grid-line"></i>Sanatçılar</a></li>
+              <li><a href="signin.html"><i class="ri-logout-box-r-line"></i>Giriş Yap</a></li>
+              <li><a href="signup.html"><i class="ri-logout-box-r-line"></i>Kayıt Ol</a></li>
+            </ul>
+          </li>
+          <!-- End .avatar-info -->
+
+          <li>
+            <label class="theme-switcher-label d-flex" for="theme-switcher">
+              <input type="checkbox" class="theme-switcher" id="theme-switcher">
+              <div class="switch-handle">
+                <i class="ri-sun-line light-text"></i>
+                <i class="ri-moon-line dark-text"></i>
+              </div>
+            </label>
+          </li>
+        </ul>
+
+      </div>
+      <!-- End .header-left -->
+    </div>
+  </header>
+  <!-- End header area -->
+
+  <!-- Start mobile menu area -->
+  <div class="popup-mobile-menu">
+    <div class="inner">
+      <div class="header-top">
+        <div class="logo logo-custom-css">
+          <a href="index.html" class="logo logo-light"><img src="./images/logo-white.png" alt="brand"> </a>
+          <a href="index.html" class="logo logo-dark"><img src="./images/logo-dark.png" alt="brand"> </a>
+        </div>
+        <div class="close-menu">
+          <button class="close-button">
+            <i class="ri-close-fill"></i>
+          </button>
+        </div>
+      </div>
+      <nav>
+        <!-- Start Mainmanu Nav -->
+        <ul class="mainmenu">
+          <li>
+            <a href="index.html" >Anasayfa</a>
+          </li>
+         
+          <li class="has-dropdown has-menu-child-item" >
+            <a href="#">Ürünler</a>
+            <ul class="submenu">
+              <li>
+                <a class="active" href="live-auction.html" >Canlı Müzayedeler</a>
+              </li>
+
+              <li>
+                <a href="coin.html">X-CIN Coin</a>
+              </li>
+              <li>
+                <a href="all-nft.html">All NFT</a>
+              </li>
+              <li>
+                <a href="art.html">Domain Adı</a>
+              </li>
+              <li>
+                <a href="art.html">Müzik</a>
+              </li>
+              <li>
+                <a href="popular-collections.html">Koleksiyonlar</a>
+              </li>
+              <li>
+                <a href="art.html">Sanat</a>
+              </li>
+              
+              <li>
+                <a href="art.html">Trading Kartları</a>
+              </li>
+              <li>
+                <a href="art.html">Video</a>
+              </li>
+              <li>
+                <a href="art.html">Virtual Dünyalar</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-dropdown has-menu-child-item">
+            <a href="#">Birimlerimiz</a>
+            <ul class="submenu">
+              <li><a href="marketplace.html">Marketplace Uzmanı</a></li>
+              <li><a href="authors.html">Sanatçılar</a></li>
+              <li><a href="finance.html">Finans</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown has-menu-child-item">
+            <a href="#">Kaynaklar</a>
+            <ul class="submenu">
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <a href="notification.html">Duyurular</a>
+              </li>
+              <li>
+                <a href="sug-comp.html">Öneri/Şikayet</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="aboutus.html" >Hakkımızda</a>
+          </li>
+          <li>
+            <a href="mission-vission.html">Misyon/Vizyon</a>
+          </li>
+          <li>
+            <a href="contact.html">İletişim</a>
+          </li>
+          
+          </li>
+        </ul>
+        <!-- End Mainmanu Nav -->
+      </nav>
+    </div>
+  </div>
+  <!-- End mobile menu area -->
+
+  <!-- Start banner area -->
+
+     
+  <section class="inner-page-banner bg-2 bg-image">
+    <div class="container">
+      <div class="inner text-center">
+        <h1 class="title">Duyurular</h1>
+        <nav class="mt-4">
+          
+        </nav>
+      </div>
+    </div>
+  </section>
+  <!-- End banner area -->
+
+  <!-- Start Activity area -->
+
+<!--Duyuru Başlangıcı-->
+  <div class="duyurular">
+    <div style="margin-top:20px;float:right;margin-right: 50px;" align="center" id="buttons">
+      <button class="btn btn-warning btn-small" onclick="filterAll('all');">Tümünü Göster</button>
+      <button class="btn btn-warning btn-small"  onclick="filterNewItems('new');">En Yeni</button>
+      <button class="btn btn-warning btn-small"  onclick="filterOldItems('old');">En Eski</button>
+     </div><br>
+    
+     <!--Duyuru Bitiş-->
+    <div class="box box2 new" style="margin:50px;padding:50px;" >
+      <section style="display:block ;">
+        <h2 id="cr7" style="text-align:center;">CR7 X-CIN MarketPlace'de</h2><br>
+       <div align="center"> <img src="./images/prize-box.jpg" style="margin:10px;padding:10px;"></div><br><br>
+        <p >CR7 Gizemli Kutu: Pazar Yeri
+          Pazar, kullanıcıların CR7 Mystery Box'ı alıp satabilecekleri yerdir. Yalnızca yeni kullanıcılar bir CR7 Mystery Box talep edebilir, ancak mevcut kullanıcılar da bu koleksiyonu Binance NFT'nin ikincil pazarındaki satıcılardan alabilir. CR7 Mystery Box NFT sahipleri ayrıca, CR7 NFT Koleksiyonundan 2 Süper Süper Nadir (SSR) ve 20 Süper Nadir (SR) Ronaldo NFT'den oluşan bir eşantiyona katılacaklar. Çekiliş için anlık görüntü <time>19 Aralık'ta</time> yapılacak.<br><br>Haber Yayınlanma Tarihi:<time datetime="2022-10-24 20:00">20:00 24/10/2022</time></p>
+          
+      </section><br>
+      <hr>
+    </div>
+    <div class="box box2 new" style="margin:50px;padding:50px;">
+      <section style="display:block ;"></section>
+      <h2 id="x-cın" style="text-align:center;">X-CIN 4,39 Dolar Seviyesine Yükseldi</h2><br>
+     <div align="center"><img src="./images/xcın.png" style="margin:10px;padding:10px;"></div> <br><br>
+        <p>X-CIN , istikrarlı kazançlar elde etti. Kısa vadeli piyasa değeri, 4,39 dolar seviyelerine yükseldi. Piyasa değeri bakımından MANA'dan sonra ikinci en büyük Metaverse coini. Bununla birlikte 3.4 milyar dolarlık piyasa değerine sahip. X-CIN'ın piyasa değeri, 2020 sonlarından bu yana yaklaşık olarak %7.000 civarında artmış .<br><br>Haber Yayınlanma Tarihi:<time datetime="2022-10-01 00:00">00:00 01/10/2022</time></p>
+      </section><br>
+      <hr>
+    </div>
+ 
+
+    <div class="box box2 new" style="margin:50px;padding:50px;">
+      <section>
+        <h2 id="top" style="text-align:center">Bu Haftanın En Çok Kazandıran Coinler Top 3</h2><br><br><br>
+        <img style="float:left;" src="./images/encok.jpg" style="margin:10px;padding:10px;"><br><br>
+          <h4 style="text-align:center">1. Chiliz (CHZ)</h4><br>
+          <p style="text-align:center">
+            31 Ekim-4 Kasım haftası en çok kazandıranlar arasında ikinci sırada yer alan Chiliz (CHZ), bu hafta birinci sıraya yükseldi. Hafta başında fiyatı 0,1973 dolar olan CHZ, yüzde 15,28 artış yaşadı. Piyasa değeri 1,4 milyar dolara yaklaştı. Birinci sıraya yükselen kripto para birimi 0,228 dolardan işlem görüyor.
+          </p><br>
+          <h4 style="text-align:center">2. UNUS SED LEO (LEO)</h4>
+          <p style="text-align:center"><br>
+            Bu hafta yatırımcısının yüzünü güldüren ve en çok kazandıran ikinci kripto para UNUS SED LEO (LEO) oldu.<br> Hafta başında fiyatı 3,9418 dolar olan LEO, yüzde 13,92 oranında artış kaydetti. Piyasa değeri 4 milyar doların üzerine çıkan LEO, 4,31 dolardan işlem görüyor.
+          </p><br>
+          <h4 style="text-align:center;">3. X-CIN (X-C)</h4><br>
+          <p style="text-align:left">
+            Bu hafta yatırımcısının yüzünü güldüren ve en çok kazandıran üçüncü kripto para X-CIN Coin oldu.
+          </p>
+          <br><br>Haber Yayınlanma Tarihi:<time datetime="2022-09-23 16:00">16:00 23/09/2022</time>
+        
+      </section><br>
+      <hr>
+    </div>
+
+    <div class="box box3 old" style="margin:50px;padding:50px;">
+      <section style="display:block ;"></section>
+      <h2 id="tuval" style="text-align:center;">Tuvalden Pixele NFT Projesi</h2><br>
+     <div align="center"><img src="./images/tuvalden-pixele.jpg" style="margin:10px;padding:10px;"></div> <br><br>
+        <p>​​​İGA İstanbul Havalimanı, 2 Nisan Dünya Otizm Farkındalık Günü kapsamında Türkiye Otistiklere Destek ve Eğitim Vakfı (TODEV) ve Upfilts teknoloji partneri iş birliğiyle hayata geçirdiği “Hayaller Dijitale Taşınıyor – Tuvalden Piksele” projesini duyurdu. Proje kapsamında otizmli çocuklar havalimanının erişilebilir hizmetlerini deneyimleme fırsatı yakalarken, NFT satışlarından elde edilen gelir TODEV’e bağışlandı.<br><br>Haber Yayınlanma Tarihi:<time datetime="2022-08-01 23:00">23:00 01/08/2022</time></p>
+      </section><br>
+      <hr>
+    </div>
+   
+    <div class="box box3 old" style="margin:50px;padding:50px;">
+      <section style="display:block ;"></section>
+      <h2 id="moda" style="text-align:center;">Damat Tween Modayı X-CIN Metaverse’e Taşıdı</h2><br>
+     <div align="center"><img src="./images/moda-metaverse.jpg" style="margin:10px;padding:10px;"></div> <br><br>
+        <p>Damat Tween, X-CIN meta evreninde ilk meta mağazayı açan moda markası oldu.
+          Şirket, metaverse’teki mağazasında yeni sezon defilesi de düzenledi. Müşterilerine yeni koleksiyonunu sanal dünyada deneyimleme imkanı sunan Damat Tween, mevcut ve potansiyel müşterilerine sunduğu teşvik kampanyaları ile metaverse’te kendi ekosistemini oluşturarak yeni bir deneyim alanı yaratmayı amaçlıyor.
+          
+          Şirketten yapılan açıklamada, Damat Tween portalından geçen kullanıcıların geçişlerde, Damat Puan, MTE Token, marka NFT’leri ve Damat Tween indirim kuponları toplayabildiği belirtildi.  <br><br>Haber Yayınlanma Tarihi:<time datetime="2022-07-01 00:00">00:00 01/07/2022</time></p>
+      </section><br>
+      <hr>
+    </div>
+
+    <div class="box box3 old" style="margin:50px;padding:50px;">
+      <section style="display:block ;"></section>
+      <h2 style="text-align:center;">Avrasya’nın ve Türkiye’nin En Büyük ve En Kapsamlı Blockchain Zirvesine Hazır Mısınız?</h2><br>
+     <div align="center"><img src="./images/eurasiablockchain.jpg" style="margin:10px;padding:10px;"></div> <br><br>
+        <p> Eurasia Blockchain Summit; ilk kez 2019 yılında düzenlenerek; 2000'den fazla katılımcı, 50'den fazla alanında uzman konuşmacı ve 75'den fazla sektörde lider markalarla iş birliği ile büyük yankı uyandırdı.
+          11-12 Haziran 2022 tarihlerinde Tersane İstanbul'da; ikincisi düzenlenecek olan Eurasia Blockchain Summit 2022, 5000'den fazla katılımcı ve dünyaca ünlü isimlerden oluşan konuşmacılarıyla, Avrasya'nın en büyük Blockchain zirvesi olarak yine fark yaratacak.
+          
+          Eurasia Blockchain Summit zirvesinin ana konu başlıkları arasında; tüm dünyanın ilgiyle takip ettiği Metaverse, Blockchain teknolojileri - ekosistemleri, NFT ve Web 3.0 yer alacak.
+          
+          Avrasya'nın en büyük blockchain zirvesi olan; Eurasia Blockchain Summit 2022'de; açık anahtarlı şifreleme konseptini keşfeden ABD’li bilgisayar uzmanı ve dünyaca ünlü şifre bilimci ödüllü danışman Bailey Whitfield Diffie, Avalabs kurucusu ve CEO'su Emin Gün Sirer,TÜBİTAK Bilgem Başkan Yardımcısı Sadullah Uzun, Cryptic Labs CEO'su Bril Wang, Avalanche Foundation Executive Director'ı Aytunç Yıldızlı,
+          Goglobal kurucu ortağı Esra Talu, Youth Holding CEO'su Emrah Kaya ve alanında uzman birçok konuşmacı bizlerle birlikte olacak.
+          
+          Türkiye'nin yanı sıra Orta Asya, Orta Doğu ve Avrupa ülkelerinden, iş ve finans dünyasının önemli isimleri, yatırımcıları, Blockchain meraklıları, geliştiricileri ve girişimcileri bu zirvede buluşacak.<br><br>Haber Yayınlanma Tarihi:<time datetime="2022-06-01 00:00">00:00 01/06/2022</time></p>
+      </section><br>
+      <hr>
+    </div>
+
+  <script>
+    function filterNewItems(c){
+      var x, i;
+      x=document.getElementsByClassName("box2");
+      y = document.getElementsByClassName('box3');
+      if(c=="new")
+      
+      c=" ";
+      for(i = 0; i<y.length; i++){
+        addClass(y[i], 'hide');
+      }
+      for(i=0; i<x.length;i++){
+        removeClass(x[i],"show");
+        removeClass(x[i],"hide");
+        if(x[i].className.lastIndexOf(c) > -1)
+          addClass(x[i], "show")
+      }
+      console.log('calisiyor');
+    }
+    function filterOldItems(c){
+      var x, i;
+      y=document.getElementsByClassName("box2");
+      x = document.getElementsByClassName('box3');
+      if(c=="old")
+      
+      c=" ";
+      for(i = 0; i<y.length; i++){
+        addClass(y[i], 'hide');
+      }
+      for(i=0; i<x.length;i++){
+        removeClass(x[i],"show");
+        removeClass(x[i],"hide");
+        if(x[i].className.lastIndexOf(c) > -1)
+          addClass(x[i], "show")
+      }
+      console.log('calisiyor');
+    }
+    function filterAll(c){
+      var x, i;
+      x = document.getElementsByClassName('box');
+      if(c=="all")
+      
+      c=" ";
+      for(i=0; i<x.length;i++){
+        removeClass(x[i],"show");
+        removeClass(x[i],"hide");
+        if(x[i].className.lastIndexOf(c) > -1)
+          addClass(x[i], "show")
+      }
+      console.log('calisiyor');
+    }
+
+    function addClass(element,name){
+      var i, arr1 , arr2;
+      arr1=element.className.split(" ");
+      arr2=name.split(" ");
+      for (i=0;i<arr2.length;i++){
+        if(arr1.indexOf(arr2[i])== -1){
+          element.className +=" " + arr2[i];
+        }
+      }
+
+    }
+
+    function removeClass(element,name){
+      var i, arr1, arr2;
+      arr1=element.className.split(" ");
+      arr2=name.split(" ");
+      for (i=0;i<arr2.length; i++){
+        while (arr1.indexOf(arr2[i]) > -1){
+          arr1.splice(arr1.indexOf(arr2[i]) , 1);
+        }
+      }
+      element.className=arr1.join(" ");
+    }
+  </script>
+  
+
+  <!-- End Activity area -->
+
+  <!-- Start Footer -->
+  <footer class="footer-wrapper">
+    <div class="footer-inner pt-120 pb-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 mb-8">
+            <div class="footer-widget first-block">
+              <div class="mb-4">
+                <a href="index.html" class="logo-light"><img src="./images/logo-white.png" alt="brand"></a>
+                <a href="index.html" class="logo logo-dark"><img src="./images/logo-dark.png" alt="brand"> </a>
+              </div>
+              <p class="mb-5">X-CIN, birden fazla blok zinciri, pazar yeri ve meta veri deposundaki tüm zincir içi ve zincir dışı NFT varlıklarının güçlü bir arama motoru ve gerçek zamanlı izleyicisidir.</p>
+              <div class="social">
+                <a class="icon-facebook" href="#"><i class="ri-facebook-line"></i></a>
+                <a class="icon-twitter" href="#"><i class="ri-twitter-line"></i></a>
+                <a class="icon-instagram" href="#"><i class="ri-instagram-line"></i></a>
+                <a class="icon-linkedin" href="#"><i class="ri-linkedin-line"></i></a>
+                <a class="icon-discord" href="#"><i class="ri-discord-line"></i></a>
+                <a class="icon-github" href="#"><i class="ri-github-line"></i></a>
+
+              </div><br><br>
+              <p >Bize Ulaşın</p>
+                <a href="tel:0(362)-999-88-77">Telofon Numarası: 0(362)-999-88-77</a><br><br>
+                <a href="mailto:example@example.com">E-Mail: xcincoin@gmail.com </a>
+            </div>
+          </div>
+          <!-- End .col -->
+
+          <div class="col-lg-2 col-md-6 mb-8">
+            <div class="footer-widget">
+              <h4>Hesap</h4>
+              <ul class="footer-list-widget">
+                <li><a href="signin.html">Giriş Yap</a></li>
+                <li><a href="signup.html">Kayıt Ol</a></li>
+                <li><a href="author-profile.html">Profil</a></li>
+                <li><a href="create.html">Öge Yarat</a></li>
+                <li><a href="all-nft.html">Keşfet</a></li>
+                <li><a href="wallet.html">Cüzdanı Bağla</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End .col -->
+
+          <div class="col-lg-2 col-md-6 mb-8">
+            <div class="footer-widget">
+              <h4>Topluluk</h4>
+              <ul class="footer-list-widget">
+                <li ><a style="color:#ff512f" href="live-auction.html">Canlı Müzayedeler</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="notification.html">Duyurular</a></li>
+               
+                <li><a href="popular-collections.html">Koleksiyonlar</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+                <li><a href="sug-comp.html">Öneri ve Şikayet</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End .col -->
+
+          <div class="col-lg-3 col-md-6 mb-8">
+            <div class="footer-widget">
+
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12077.025021074343!2d29.9217153!3d40.8223347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc81fa849234e8755!2sKocaeli%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1637429163600!5m2!1str!2str"
+                  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- End .col -->
+        </div>
+      </div>
+      <!-- End .container -->
+    </div>
+    <div class="copyright text-center">
+      <div class="container">
+        <p>ASLI BOZKURT & MELİHA MUTLU © 2022 <a href="https://themeforest.net/user/ib-themes" target="_blank"></a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <!-- JS ============================================ -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/jquery.nice-select.min.js"></script>
+  <script src="js/vendor/modernizer.min.js"></script>
+  <script src="js/vendor/slick.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/waypoint.js"></script>
+  <script src="js/vendor/js.cookie.js"></script>
+  <script src="js/vendor/count-down.js"></script>
+  <script src="js/vendor/counter-up.js"></script>
+  <script src="js/vendor/isotop.js"></script>
+  <script src="js/vendor/imageloaded.js"></script>
+  <script src="js/vendor/jquery.custom-file-input.js"></script>
+
+  <!-- main JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

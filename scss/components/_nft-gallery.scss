@@ -1,0 +1,55 @@
+.nft-gallery-activation {
+    .slick-dots {
+        margin-top: 0;
+    }
+}
+.gallery-thumb {
+    .thumb {
+        position: relative;
+        border-radius: 10px;
+        background: #20202d;
+        padding: 15px;
+        margin: 50px 15px 50px;
+        @include xs-device {
+            margin: 40px 10px 40px;
+        }
+        &:nth-child(2) {
+            transform: translateX(140px);
+        }
+        img {
+            width: 100%;
+        }
+        .inner {
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -14px;
+            z-index: -1;
+            background: $bg-color-1;
+            width: 70%;
+            height: 100%;
+            border-radius: 10px;
+            @include sm-device {
+                width: 50px;
+            }
+        }
+        &::after {
+            left: auto;
+            bottom: auto;
+            top: -14px;
+            right: 0;
+        }
+
+        &:hover {
+            img {
+                opacity: 0.8;
+                transform: scale(1.2);
+            }
+        }
+    }
+}

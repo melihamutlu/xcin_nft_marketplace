@@ -1,0 +1,36 @@
+.inner-page-banner {
+    padding: 150px 0 90px;
+    background-image: url(../images/bg/dark-inner.jpg);
+    @include xs-device {
+        padding: 100px 0 55px;
+    }
+    .title {
+        font-size: 30px;
+        font-family: $font-1;
+        line-height: 1;
+        @include xs-device {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+    }
+    .inner {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+        @include xs-device {
+            flex-direction: column;
+            padding: 15px;
+        }
+    }
+    nav.mt-4 {
+        margin-top: 0 !important;
+    }
+}
+.breadcrumb-item.active {
+    color: #fff;
+}

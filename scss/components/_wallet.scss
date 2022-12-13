@@ -1,0 +1,33 @@
+.wallet-block {
+    background: $bg-color-1;
+    padding: 30px 24px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+
+    .thumb {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+    }
+
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+    p {
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &:hover {
+        background: rgb(32, 32, 45);
+        transform: translateY(-5px);
+    }
+}

@@ -1,0 +1,63 @@
+/* CSS Document */
+
+/* 
+Created on   : 04/03/2022.
+Theme Name   : Banu NFT Marketplace HTML Template
+Version      : 1.0.
+Developed by : (ib-themes21@gmail.com) / (https://themeforest.net/user/ib-themes)
+Primary use:  ib-themes 
+*/
+
+/**
+01 - Font Import
+02 - Dafault Base CSS
+03 - All Component Base CSS
+**/
+
+// font import
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Chakra+Petch:wght@500;600;700&family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+
+// default
+@import "defaults/variables";
+@import "defaults/mixin";
+@import "defaults/typography";
+@import "defaults/base";
+@import "defaults/spacing";
+@import "defaults/helper-class";
+@import "defaults/form";
+@import "defaults/button";
+@import "defaults/breadcrumb";
+@import "defaults/browserhacks";
+@import "defaults/preloader";
+@import "defaults/slick-custom";
+@import "defaults/animation";
+@import "defaults/section-title";
+@import "defaults/switcher";
+
+// components
+@import "components/menu";
+@import "components/header";
+@import "components/hero";
+@import "components/explore";
+@import "components/top-seller";
+@import "components/popular-collection";
+@import "components/wallet-setup";
+@import "components/tabs";
+@import "components/modal";
+@import "components/inner-page";
+@import "components/counter";
+@import "components/sidebar_filter";
+@import "components/single-product";
+@import "components/activity";
+@import "components/blog";
+@import "components/blog-details";
+@import "components/authors";
+@import "components/wallet";
+@import "components/create-item";
+@import "components/file-upload";
+@import "components/signup";
+@import "components/not-found";
+@import "components/footer";
+@import "components/nft-gallery";
+@import "./../css/vendor/nice-select.css";
+@import "components/light-version";

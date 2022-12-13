@@ -1,0 +1,40 @@
+// Mixin For Elementor
+@mixin xl-device {
+    @media (max-width: 1919px) {
+        @content;
+    }
+}
+
+/* -- For screens 1264px to 1903px */
+@mixin lg-device {
+    @media (max-width: 1499px) {
+        @content;
+    }
+}
+
+/* -- For screens 960px to 1263px */
+@mixin md-device {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+/* -- For screens 600px to 959px */
+@mixin sm-device {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+/* -- For For screens 0 to 600px */
+@mixin xs-device {
+    @media (max-width: 575px) {
+        @content;
+    }
+}
+/* -- For For screens 0 to 360 */
+@mixin tiny-device {
+    @media (max-width: 360px) {
+        @content;
+    }
+}

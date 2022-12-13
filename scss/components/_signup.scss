@@ -1,0 +1,178 @@
+.signup-wrapper {
+    background: $bg-color-1;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    &.signin-wrapper {
+        background: #111;
+    }
+    &.header-free-signin {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #111;
+        .signin-form-2 {
+            background: $bg-color-1;
+        }
+        .signin-content {
+            max-width: 550px;
+            margin: 0 auto;
+            .signin-form {
+                @media (max-width: 1700px) {
+                    padding: 30px;
+                }
+            }
+        }
+        @media (max-width: 1700px) {
+            height: auto;
+            margin: 50px 0;
+        }
+        @include xs-device {
+            height: auto;
+            margin: 30px 0;
+        }
+    }
+    @include xs-device {
+        padding: 2px;
+    }
+
+    .register-with {
+        border: 2px solid $body-color-light;
+        padding: 10px 15px;
+        justify-content: center;
+        border-radius: 30px;
+        font-weight: 500;
+
+        i {
+            font-size: 18px;
+            padding-right: 8px;
+            &.ri-facebook-fill {
+                color: #4267b2;
+            }
+            &.ri-google-fill {
+                color: #db4437;
+            }
+        }
+        &.metamask-btn {
+            &:hover {
+                background: #ee811a;
+                border-color: #ee811a;
+                color: #fff;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        &.google-btn {
+            &:hover {
+                background: #db4437;
+                border-color: #db4437;
+                color: #fff;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        &.fb-btn {
+            &:hover {
+                background: #4267b2;
+                border-color: #4267b2;
+                color: #fff;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.checkbox {
+    cursor: pointer;
+    font-family: $font-2;
+    font-weight: 400;
+}
+.signup-content,
+.contact-inner-contnet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    @include xs-device {
+        padding: 40px 15px;
+    }
+}
+.signin-content {
+    &.w-50 {
+        @media (max-width: 1919px) {
+            width: 60% !important;
+        }
+        @media (max-width: 767px) {
+            width: 100% !important;
+            padding: 0 15px;
+        }
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
+
+.medium {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-inner-contnet {
+    .nice-select {
+        background: transparent;
+    }
+}
+
+.row.gutter-0 {
+    margin-left: 0;
+    margin-right: 0;
+    > [class*="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.contact-wrapper {
+    box-shadow: 0px 3px 16px rgb(47 83 109 / 12%);
+    .contact-inner-contnet {
+        padding: 40px;
+    }
+}
+
+.signin-form {
+    background: $bg-color-1;
+    border-radius: 10px;
+    padding: 50px;
+    @include xs-device {
+        padding: 25px 15px;
+    }
+}
+.sign-wrapeer h2 {
+    font-size: 32px;
+}
+.signup {
+    padding: 50px;
+    border-radius: 10px;
+    @include xs-device {
+        padding: 25px 15px;
+    }
+}
+
+.rounded {
+    border-radius: 10px !important;
+}
+
+.signin-wrapper {
+    @include md-device {
+        height: 100vh;
+        display: flex;
+    }
+    @include xs-device {
+        padding: 100px 0;
+        height: auto;
+    }
+}

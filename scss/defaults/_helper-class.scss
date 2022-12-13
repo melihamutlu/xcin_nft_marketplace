@@ -1,0 +1,82 @@
+.section-bg-separation {
+    background: #202027;
+}
+.section-bg-separation-2 {
+    background: #000;
+}
+.d-flex-center {
+    display: flex;
+    align-items: center;
+}
+.d-flex-start {
+    display: flex;
+    align-items: flex-start;
+}
+.d-flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.medium {
+    font-size: 16px;
+    line-height: 24px;
+}
+.bg-overlay {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.67);
+    }
+}
+.pt-120 {
+    padding-top: 120px;
+    @include sm-device {
+        padding-top: 100px;
+    }
+}
+.pb-120 {
+    padding-bottom: 120px;
+    @include sm-device {
+        padding-bottom: 100px;
+    }
+}
+
+.ptb-120 {
+    padding: 120px 0;
+    @include sm-device {
+        padding: 100px 0;
+    }
+}
+.pt-90 {
+    padding-top: 90px;
+    @include sm-device {
+        padding-top: 70px;
+    }
+}
+.pb-90 {
+    padding-bottom: 90px;
+    @include sm-device {
+        padding-bottom: 70px;
+    }
+}
+.pb-80 {
+    padding-bottom: 80px;
+    @include sm-device {
+        padding-bottom: 40px;
+    }
+}
+.color-primary {
+    color: $color-primary;
+}
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.section-bg-separation-3 {
+    background: #161726;
+}

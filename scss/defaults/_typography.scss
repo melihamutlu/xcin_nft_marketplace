@@ -1,0 +1,141 @@
+body {
+    background: $body-bg;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $font-2;
+    color: $body-color;
+}
+
+h1,
+.aw-h1 {
+    font-size: 75px;
+
+    @include lg-device {
+    }
+
+    @include md-device {
+    }
+}
+
+h2,
+.aw-h2 {
+    font-size: 45px;
+
+    @include sm-device {
+        font-size: 35px;
+    }
+    @include xs-device {
+        font-size: 28px;
+    }
+}
+
+h3,
+.aw-h3 {
+    font-size: 24px;
+
+    @include lg-device {
+    }
+}
+
+h4,
+.aw-h4 {
+    font-size: 18px;
+
+    @include lg-device {
+    }
+}
+
+h5,
+.aw-h5 {
+    @include sm-device {
+    }
+}
+
+h6,
+.aw-h6 {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.aw-h1,
+.aw-h2,
+.aw-h3,
+.aw-h4,
+.aw-h5,
+.aw-h6 {
+    font-family: $font-1;
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 800;
+}
+
+b,
+strong {
+    font-weight: 800;
+    font-family: $font-1;
+    color: #fff;
+}
+
+p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 26px;
+    @include xs-device {
+        font-size: 16px;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+}
+
+label {
+    font-size: 15px;
+    padding-bottom: 0;
+    display: block;
+    font-weight: 500;
+    font-family: $font-1;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 2px solid $body-bg;
+}
+
+h5,
+.aw-h5 {
+    span {
+        font-size: 15px;
+        padding-left: 30px;
+        font-weight: 400;
+    }
+}
+ul,
+ol {
+    li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
