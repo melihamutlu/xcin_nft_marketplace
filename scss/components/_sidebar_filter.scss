@@ -1,0 +1,64 @@
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #30303d;
+    box-shadow: none;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+.filter-item-list {
+    padding-left: 15px;
+}
+.filter-wrapper {
+    background: $bg-color-1;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 25px;
+    @include lg-device {
+        margin-right: 0;
+    }
+    @include sm-device {
+        margin-bottom: 40px;
+    }
+
+    .filter-custom-item {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    .form-check {
+        margin-bottom: 12px;
+        cursor: pointer;
+        label {
+            color: #ddd;
+            padding-left: 5px;
+        }
+        input,
+        label {
+            cursor: pointer;
+        }
+        input {
+            &:checked {
+                background-color: $color-primary;
+                border-color: $color-primary;
+            }
+            &:focus {
+                box-shadow: rgb(255, 81, 47, 0.25) 0px 0px 0px 0;
+            }
+        }
+    }
+}
+.accordion-button::after {
+    content: "\EA4E";
+    font-family: remixicon !important;
+    font-size: 22px;
+    background-image: none;
+    width: auto;
+    height: auto;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}

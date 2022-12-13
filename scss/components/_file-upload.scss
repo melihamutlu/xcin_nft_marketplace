@@ -1,0 +1,98 @@
+.upload-area label {
+    border: 2px solid rgb(74, 74, 74);
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.upload-area label i {
+    font-size: 40px;
+    stroke-width: 1px;
+    color: $color-primary;
+    margin-bottom: 10px;
+}
+.upload-area label .file-type {
+    font-size: 14px;
+    font-family: $font-2;
+}
+.upload-area label span {
+    font-size: 20px;
+}
+
+.upload-area .upload-formate h6.title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.upload-area .upload-formate p.formate {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.upload-area .brows-file-wrapper {
+    position: relative;
+    background: #1a1a1a;
+    border-radius: 10px;
+    transition: 0.3s;
+    &:hover {
+        background: #000;
+    }
+}
+.upload-area .brows-file-wrapper input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.upload-btn-wrapper {
+    padding: 20px 30px 10px;
+    border-radius: 10px;
+    background: $bg-color-1;
+    margin-top: 30px;
+    .btn {
+        margin-bottom: 10px;
+    }
+    @include xs-device {
+        padding: 20px 15px 10px;
+        .input-box {
+            width: 100%;
+            .btn {
+                width: 100%;
+            }
+        }
+        .d-flex-center {
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+.form-field-wrapper {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px 40px 0 40px;
+    @include xs-device {
+        padding: 20px 15px 0 15px;
+    }
+
+    .nice-select {
+        width: 100%;
+        background: #1a1a1a;
+        border-color: rgb(74, 74, 74);
+    }
+    input,
+    textarea {
+        border-color: rgb(74, 74, 74);
+        color: #fff;
+        &:focus {
+            border-color: $color-primary;
+        }
+    }
+}

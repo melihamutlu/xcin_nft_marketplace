@@ -1,0 +1,41 @@
+.not-found-inner {
+    padding-top: 100px;
+    @include xs-device {
+        padding-top: 20px;
+    }
+    .title {
+        margin-bottom: 35px;
+        @media screen and (min-width: 1200px) {
+            font-size: 75px;
+        }
+        @include md-device {
+            font-size: 60px;
+        }
+        @include sm-device {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        @include xs-device {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    p {
+        font-size: 20px;
+        margin-bottom: 35px;
+        line-height: 32px;
+        @include md-device {
+            margin-bottom: 20px;
+        }
+        @include xs-device {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    .not-found-content {
+        padding-left: 20px;
+        @include xs-device {
+            padding-left: 0;
+        }
+    }
+}

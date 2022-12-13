@@ -1,0 +1,124 @@
+.bar-title {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 2px;
+        background: $color-primary;
+    }
+}
+
+.filter-tag-wrapper {
+    .bar-title {
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+    }
+}
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+    .btn {
+        margin: 8px;
+        border-radius: 6px;
+        padding: 6px 15px;
+        color: $body-color;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.activity-wrapper {
+    .custom-tab-content {
+        background: transparent;
+        padding: 0;
+    }
+    .custom-history {
+        margin-right: 60px;
+        @include xs-device {
+            margin-right: 0;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        .single-item-history {
+            background: $bg-color-1;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            display: flex;
+            align-items: center;
+            h3 {
+                font-size: 20px;
+                margin-bottom: 5px;
+                a {
+                    color: #fff;
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
+
+            .avatar {
+                width: 80px;
+                height: 80px;
+            }
+            .date {
+                font-weight: 500;
+                color: #999;
+                font-size: 16px;
+            }
+        }
+        &.notification-history {
+            h4 {
+                margin-bottom: 5px;
+                a {
+                    color: #fff;
+                }
+            }
+            .reaction {
+                font-size: 22px;
+                cursor: pointer;
+                width: 55px;
+                height: 55px;
+                background: rgba(255, 255, 255, 0.1);
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                display: flex;
+                i {
+                    transition: 0.3s;
+                }
+                &:hover {
+                    i {
+                        color: $color-primary;
+                    }
+                }
+            }
+
+            .single-item-history {
+                background: $bg-color-1;
+                @include tiny-device {
+                    padding: 15px 10px;
+
+                    .reaction {
+                        width: auto;
+                        height: auto;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+.flex-md-wrap {
+    @include xs-device {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

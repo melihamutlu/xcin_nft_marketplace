@@ -1,0 +1,55 @@
+// switcherr
+.theme-switcher-label {
+    cursor: pointer;
+    position: relative;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    @include xs-device {
+        width: 35px;
+        height: 35px;
+    }
+
+    .switch-handle {
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+        i {
+            position: absolute;
+            font-size: 22px;
+            transition: 0.3s;
+        }
+    }
+
+    .theme-switcher {
+        display: none;
+    }
+    .light-text {
+        color: #fff;
+    }
+    .dark-text {
+        color: #000;
+    }
+    &.active {
+        background-color: rgba(0, 0, 0, 0.1);
+        .light-text {
+            visibility: hidden;
+            opacity: 0;
+        }
+        .dark-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    .dark-text {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

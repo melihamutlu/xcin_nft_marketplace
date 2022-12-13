@@ -1,0 +1,62 @@
+// preloader
+.ctn-preloader {
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    display: -ms-flexbox;
+    height: 100%;
+    justify-content: center;
+    -webkit-justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+    background: $bg-color-1;
+}
+
+.ctn-preloader .animation-preloader {
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+}
+
+.ctn-preloader .animation-preloader .icon {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+.ctn-preloader .animation-preloader .icon span {
+    animation: spinner 1.5s infinite linear;
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.ctn-preloader .animation-preloader .icon span:after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 12px;
+    left: 0;
+    box-shadow: 0 0 10px #dd2476;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(#ff512f, #dd2476);
+}
+
+@keyframes spinner {
+    to {
+        transform: rotateZ(360deg);
+    }
+}

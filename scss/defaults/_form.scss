@@ -1,0 +1,120 @@
+input:focus,
+textarea:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid $border-color-light;
+    transition: 0.3s;
+    color: #fff;
+    &:focus {
+        border-color: $color-primary;
+    }
+}
+.form-check-input:checked {
+    background-color: $color-primary;
+    border-color: $color-primary;
+}
+.form-check-input {
+    margin-top: 0.2em;
+    &:focus {
+        box-shadow: none;
+    }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid $body-color-light;
+    background: transparent;
+}
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.modal-dialog {
+    max-width: 450px;
+}
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $body-color;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $body-color;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $body-color;
+}
+
+.nice-select {
+    background-color: $bg-color-1;
+    border: solid 2px $border-color-light;
+    font-size: 16px;
+    color: #dedede;
+    height: 47px;
+    line-height: 45px;
+    padding-right: 45px;
+    font-weight: 600;
+    &.open {
+        color: #fff;
+    }
+    .current {
+        font-size: 15px;
+    }
+}
+.nice-select:after {
+    border-bottom: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    height: 7px;
+    width: 7px;
+    right: 15px;
+}
+.nice-select .list {
+    background: #111;
+    width: 100%;
+    li {
+        font-size: 14px;
+    }
+}
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background-color: #323232;
+}
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus,
+.nice-select:hover {
+    border-color: $color-primary;
+}
+.nice-select .option.selected {
+    font-weight: 500;
+}
+input,
+select,
+textarea {
+    width: 100%;
+}
+.form-check-input:checked[type="checkbox"] {
+    border-color: $color-primary;
+}

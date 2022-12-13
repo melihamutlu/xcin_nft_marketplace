@@ -1,0 +1,145 @@
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #202027;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    label {
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    input {
+        color: #fff;
+        height: 46px;
+        border-color: $body-color-light;
+    }
+    .modal-title {
+        font-family: $font-1;
+        font-size: 22px;
+    }
+}
+.btn-custom-closer {
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    transition: 0.3s;
+    z-index: 3;
+    @include sm-device {
+        right: -5px;
+    }
+    &:hover {
+        background: $color-primary;
+        i {
+            color: #fff;
+        }
+    }
+}
+.modal-footer {
+    border-top-color: #333;
+}
+.modal-header {
+    border-bottom-color: #333;
+}
+.bidding-list {
+    margin: 0;
+    padding-top: 20px;
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: #ccc;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #fff;
+            font-weight: 500;
+            padding-left: 15px;
+        }
+    }
+}
+
+.bid-success-content {
+    h3 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+    }
+    strong {
+        color: #fff;
+        font-weight: 500;
+    }
+}
+
+// single history
+.single-item-history {
+    margin-top: 15px;
+    &:not(:last-child) {
+        border-bottom: 1px solid #414141;
+        padding-bottom: 15px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding-right: 7.5px;
+        border-radius: 6px;
+
+        i {
+            width: 20px;
+            height: 20px;
+            background: #ff512f;
+            color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            right: 6px;
+            bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+    .content {
+        flex: auto;
+        padding-left: 7.5px;
+        p {
+            margin-bottom: 0;
+        }
+        span {
+            font-size: 15px;
+
+            &.time {
+                @include xs-device {
+                    display: block;
+                    margin-left: 0 !important;
+                }
+            }
+        }
+    }
+}
+.modal {
+    z-index: 9999;
+}

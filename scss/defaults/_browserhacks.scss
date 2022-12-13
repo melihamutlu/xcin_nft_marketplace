@@ -1,0 +1,13 @@
+// Browser Hacks
+
+/* -- Chrome hacks -- */
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {}
+
+/* -- Firefox hacks -- */
+@-moz-document url-prefix() {
+
+
+}
+
+/* -- IE hacks -- */
+@media screen and (min-width:0\0) {}
